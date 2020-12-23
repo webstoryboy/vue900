@@ -12,7 +12,6 @@
         url("http://db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.svg#Saol Display Regular") format("svg"); //iOS
 }
 
-
 @font-face {
     font-family: 'Chosunilbo_myungjo';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
@@ -215,7 +214,7 @@ iframe {
 
 //header
 #header {
-    position: static; 
+    position: fixed; 
     left: 0; top: 0; 
     width: 100%;
     height: 82px;
@@ -308,5 +307,34 @@ iframe {
         &::after {
             background-color: $color-black;
         }
+    }
+}
+
+
+//main
+#mainCont {
+    background-color: $color-black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainCont {
+    color: $white;
+    font-size: 9vw;
+    line-height: 0.8;
+    font-family: $font-main;
+    font-weight: normal;
+    margin-top: 6vh;
+    
+    > div {
+        margin-bottom: 0.5vw;
+        padding-bottom: 1vw;
+    }
+
+    .white {
+        background-color: #fff;
+        color: #000;
+        display: inline-block;
     }
 }
